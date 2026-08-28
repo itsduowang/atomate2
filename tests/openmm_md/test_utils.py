@@ -24,6 +24,6 @@ def test_increment_file_name():
 
     for file_name, expected_output in test_cases:
         result = increment_name(file_name)
-        assert (
-            result == expected_output
-        ), f"Failed for case: {file_name}. Expected: {expected_output}, Got: {result}"
+        assert result == expected_output, (
+            f"Failed for case: {file_name}. Expected: {expected_output}, Got: {result}"
+        )
